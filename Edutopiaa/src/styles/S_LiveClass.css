@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+.live-app {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+/* Header */
+.live-header {
+  background: #d7c095;
+  padding: 16px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.title {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.signal-icon {
+  font-size: 26px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #7a2c2c;
+}
+
+.profile-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+/* Back Button */
+.back-btn {
+  width: 48px;
+  height: 61px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.back-icon {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Layout */
+.live-content {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  height: calc(100vh - 80px);
+}
+
+/* Left Panel */
+.left-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Live Card */
+.live-card {
+  position: relative;
+  background: #1e88e5;
+  border-radius: 26px;
+  padding: 30px;
+  color: white;
+  height: 700px;
+}
+
+.live-label {
+  background: red;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  color: black;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.live-info {
+  margin-top: 20px;
+}
+
+.class-title {
+  font-size: 18px;
+}
+
+.session-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.start-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  background: #6bd44c;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 20px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Study Notes */
+.notes-btn {
+  background: #2196f3;
+  border: none;
+  padding: 28px;
+  font-size: 28px;
+  color: white;
+  border-radius: 26px;
+  cursor: pointer;
+}
+
+/* Schedule */
+.schedule {
+  width: 420px;
+  background: #f4f4f4;
+  border-radius: 26px;
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-top {
+  background: #b23b3b;
+  color: white;
+  padding: 16px;
+  font-size: 28px;
+  border-radius: 26px 26px 0 0;
+}
+
+.schedule-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.month {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Rows */
+.schedule-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.today {
+  font-weight: bold;
+}
+
+.join-btn {
+  background: #1e88e5;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.quiz-btn {
+  background: #1e88e5;
+  color: white;
+  border: none;
+  padding: 6px 18px;
+  border-radius: 16px;
+  cursor: pointer;
+}

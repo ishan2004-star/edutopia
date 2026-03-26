@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Background */
+.app::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("/background.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.25;
+  z-index: -1;
+}
+
+/* Header */
+.header {
+  background: #d7c095;
+  padding: 16px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  gap: 12px;
+  font-size: 26px;
+  color: #7a2c2c;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #7a2c2c;
+}
+
+.profile-img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+/* Layout */
+.content {
+  display: flex;
+  padding: 30px;
+  gap: 30px;
+  height: calc(100vh - 80px);
+}
+
+/* Left buttons */
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* ✅ small gap added */
+  height: 100%;
+}
+
+.card {
+  flex: 1;
+  border: none;
+  padding: 0 32px;
+  font-size: 32px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  border-radius: 26px;
+}
+
+.orange { background: #f39c12; }
+.blue { background: #2e86de; }
+.green { background: #6abf40; }
+
+.card:hover {
+  opacity: 0.9;
+}
+
+/* Attendance */
+.attendance {
+  width: 430px;          /* ✅ calendar made horizontally bigger */
+  height: 100%;
+  background: #f4f4f4;
+  border-radius: 26px;
+  display: flex;
+  flex-direction: column;
+}
+
+.attendance-top {
+  background: #a94442;
+  color: white;
+  padding: 16px;
+  font-size: 26px;
+}
+
+.attendance-body {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.month {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Calendar grid */
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 16px;            /* ✅ slightly more breathing space */
+  text-align: center;
+  flex: 1;
+  align-content: start;
+}
+
+.days span {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin: auto;
+  border-radius: 50%;
+  font-size: 15px;
+}
+
+.present {
+  background: #6bd44c;
+  color: white;
+}
+
+.today {
+  background: #3498db;
+  color: white;
+}
+
+.pending {
+  border: 2px dashed #3498db;
+  color: #3498db;
+}
+
+.summary {
+  margin-top: 18px;
+  font-size: 16px;
+}

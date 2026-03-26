@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+.progress-app {
+  min-height: 100vh;
+  background: white;
+}
+
+/* Header */
+.progress-header {
+  background: #d7c095;
+  padding: 16px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.title {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.signal-icon {
+  font-size: 26px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #7a2c2c;
+}
+
+.profile-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+/* Back Button */
+.back-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-icon {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Layout */
+.progress-content {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 30px;
+}
+
+/* Cards */
+.card {
+  border-radius: 26px;
+  padding: 24px;
+  color: white;
+}
+
+/* Quiz Result */
+.quiz-result {
+  background: #2196f3;
+}
+
+.quiz-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.score-box {
+  background: #ffa000;
+  border-radius: 20px;
+  padding: 16px;
+  margin-top: 20px;
+}
+
+.progress-bar {
+  background: white;
+  height: 18px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress-fill {
+  width: 85%;
+  height: 100%;
+  background: #7ed321;
+}
+
+/* Streak */
+.streak {
+  background: #ffd600;
+  color: black;
+}
+
+/* Tutor Feedback */
+.feedback {
+  background: #76d326;
+  grid-column: span 2;
+  color: black;
+}
+
+/* Subject Progress */
+.subject-progress {
+  background: #ffb74d;
+}
+
+.bars {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bar-fill {
+  width: 50px;
+  background: #2196f3;
+  border-radius: 12px 12px 0 0;
+}
+
+.bar span {
+  margin-top: 8px;
+  font-weight: bold;
+}
